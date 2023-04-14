@@ -28,10 +28,10 @@ const SignIn = () => {
           </div>
           <div className="flex flex-col space-y-4">
             <Auth
+              onlyThirdPartyProviders={true}
               supabaseClient={supabaseClient}
-              providers={['github']}
+              providers={['linkedin']}
               redirectTo={getURL()}
-              magicLink={true}
               appearance={{
                 theme: ThemeSupa,
                 variables: {
